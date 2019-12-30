@@ -31,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/Programs/Dev/learndjango" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -248,10 +249,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" width="1089" height="712" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1575829445477" />
-    <state x="424" y="26" key="CommitChangelistDialog2" timestamp="1577127524135">
+    <state x="424" y="26" key="CommitChangelistDialog2" timestamp="1577738180559">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="424" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1577127524135" />
+    <state x="424" y="26" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1577738180559" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1577737615218">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
