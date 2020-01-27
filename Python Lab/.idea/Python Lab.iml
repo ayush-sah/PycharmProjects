@@ -6,9 +6,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="Pong" />
-    <orderEntry type="module" module-name="Snake" />
-    <orderEntry type="module" module-name="ConnectFour" />
-    <orderEntry type="module" module-name="learndjango" />
   </component>
 </module>
