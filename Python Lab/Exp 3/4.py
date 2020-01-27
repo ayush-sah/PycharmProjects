@@ -1,3 +1,4 @@
+# To add key value pair to the dictionary and search and then delete the given key from the dictionary
 repeat = True
 names = {'ayush': 'sah', 'dhiraj': 'rawat', 'sumit': 'sangwan'}
 
