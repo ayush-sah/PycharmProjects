@@ -1,0 +1,6 @@
+even-odd
+prime between 1-100
+input marks of 5 subject and display result
+to check if the number is armstrong
+check char is vower or constant
+password validator (lower,upper,symbol,digit, minlength=6)
