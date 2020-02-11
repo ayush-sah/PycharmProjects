@@ -1,3 +1,5 @@
+# To Implement a program with same method name and multiple arguments
+
 class add:
     def calc(num1, num2):
         return num1 + num2

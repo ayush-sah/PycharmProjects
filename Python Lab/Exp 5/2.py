@@ -1,3 +1,4 @@
+# To Implement Multiple Inheritance in python
 class person:
     name = ""
     age = 0
