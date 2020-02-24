@@ -1,3 +1,5 @@
+# To check whether string is palindrome or not using function recursion
+
 repeat = True
 while repeat:
 

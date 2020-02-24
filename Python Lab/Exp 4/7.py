@@ -1,4 +1,13 @@
-celcius = int(input("Enter temperature in celcius: "))
+# To shuffle a deck of cards and draw any 5 cards from it
+import  random
 
-farhenheit = lambda x: (x*(9/5))+32
-print("The temperature in farhenheit is ", farhenheit(celcius))
+def shuffle(num, type):
+    print("Your random deck is: ")
+    for i in range(5):
+        newnum = random.choice(num)
+        print("|",newnum, random.choice(type), end=" |\t")
+
+numbers = ['A',2,3,4,5,6,7,8,9,10,'J','Q','K']
+types = ["♠","♥","♦","♣"]
+shuffle(numbers, types)
+

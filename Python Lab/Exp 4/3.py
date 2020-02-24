@@ -1,4 +1,4 @@
-
+# To find binary equivalent of number using recursion
 def digtobin(num, string):
     if num >= 1:
         if(num%2==0):

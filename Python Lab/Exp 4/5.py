@@ -1,2 +1,6 @@
-l = [1, 2, 3, 4, 5]
-print("Numbers greater than 9 after square is ",list(filter(lambda x:x>9,map(lambda x: x * x,l))))
+# Convert the temperature in Celsius to Fahrenheit in list using anonymous  function
+
+celsius = int(input("Enter temperature in celcius: "))
+
+farhenheit = lambda x: (x*(9/5))+32
+print("The temperature in farhenheit is ", farhenheit(celsius))
