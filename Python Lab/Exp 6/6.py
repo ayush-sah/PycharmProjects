@@ -1,29 +1,45 @@
 import random
 
 rand = random.randrange(1, 100)
-num = int(input("Enter a number: "))
 
 
-class NotMatchingError(Exception):
+def Numbergame(num):
+    num
+    try:
+        if (num > rand):
+            raise (BigNumber(num))
+        elif (num < rand):
+            raise (SmallNumber(num))
+
+    except BigNumber as error1:
+        print("Number too big,", error1.value)
+        num = int(input("\nTry again: "))
+        Numbergame(num)
+
+    except SmallNumber as error2:
+        print("Number too small,", error2.value)
+        num = int(input("\nTry again: "))
+        Numbergame(num)
+
+    else:
+        print("Voila, same pinch.")
+
+
+class SmallNumber(Exception):
     def __init__(self, value):
         self.value = value
 
     def __str__(self):
         return repr(self.value)
 
-def NumberGame():
-    try:
-        num = int(input("Try Again: "))
-        raise (NotMatchingError(num))
 
-    except NotMatchingError as error:
-        if(num>rand):
-            print("Number too big", error.value)
-            NumberGame()
-        elif(num<rand):
-            print("Number too small", error.value)
-            NumberGame()
-        print(error.value)
+class BigNumber(Exception):
+    def __init__(self, value):
+        self.value = value
 
-    else:
-        print("Voila, same pinch.")
+    def __str__(self):
+        return repr(self.value)
+
+
+num = int(input("Enter a number: "))
+Numbergame(num)
