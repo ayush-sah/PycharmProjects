@@ -10,13 +10,13 @@ pygame.init()
 screen = pygame.display.set_mode((800, 600))
 
 # background Image
-backgroundImage = pygame.image.load('back.jpg')
-mixer.music.load('background.wav')
+backgroundImage = pygame.image.load('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/back.jpg')
+mixer.music.load('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/background.wav')
 mixer.music.play(-1)
 
 # Title and Icon
 pygame.display.set_caption("Space Invaders")
-icon = pygame.image.load('ufo.png')
+icon = pygame.image.load('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/ufo.png')
 pygame.display.set_icon(icon)
 
 # Player
@@ -33,7 +33,7 @@ enemyY_change = []
 num_of_enemies = 6
 
 for i in range(num_of_enemies):
-    enemyImage.append(pygame.image.load('enemy.png'))
+    enemyImage.append(pygame.image.load('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/enemy.png'))
     enemyX.append(random.randint(0, 735))
     enemyY.append(random.randint(50, 150))
     enemyX_change.append(4)
@@ -42,7 +42,7 @@ for i in range(num_of_enemies):
 # Bullet
 # Ready - Bullet not visible on the screen
 # Fire - The Bullet is currently moving
-bulletImage = pygame.image.load('bullet.png')
+bulletImage = pygame.image.load('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/bullet.png')
 bulletX = 0
 bulletY = 480
 bulletX_change = 2
@@ -108,7 +108,7 @@ while running:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
                 if bullet_state == "ready":
-                    bullet_sound = mixer.Sound('laser.wav')
+                    bullet_sound = mixer.Sound('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/laser.wav')
                     bullet_sound.play()
                     bulletX = playerX
                     fire_bullet(bulletX, bulletY)
@@ -142,7 +142,7 @@ while running:
             enemyY[i] += enemyY_change[i]
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
-            collision_sound = mixer.Sound('explosion.wav')
+            collision_sound = mixer.Sound('C:/Users/Ayush/PycharmProjects/Games/SpaceInvader/explosion.wav')
             collision_sound.play()
             bulletY = 480
             bullet_state = "ready"
