@@ -1,3 +1,5 @@
+# code for Snake game
+
 import pygame
 import random
 import math

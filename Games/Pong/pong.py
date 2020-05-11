@@ -1,15 +1,21 @@
+# code for Pong Game
+
+# This game was built using turtle and sound was played using winsound.
 import turtle
 import winsound
 
+# creating a screen
 window = turtle.Screen()
 window.title("Pong Game")
 window.bgcolor("black")
 window.setup(width=800, height=600)
 window.tracer(0)
 
+# initially setting scores to 0
 score_a = 0
 score_b = 0
 
+# Defining Paddle A
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
@@ -18,6 +24,7 @@ paddle_a.shapesize(stretch_wid=5, stretch_len=1)
 paddle_a.penup()
 paddle_a.goto(-350, 0)
 
+# Defining Paddle B
 paddle_b = turtle.Turtle()
 paddle_b.speed(0)
 paddle_b.shape("square")
@@ -26,14 +33,18 @@ paddle_b.shapesize(stretch_wid=5, stretch_len=1)
 paddle_b.penup()
 paddle_b.goto(350, 0)
 
+# Defining the ball
 ball = turtle.Turtle()
 ball.speed(0)
 ball.shape("square")
 ball.color("red")
 ball.penup()
 ball.goto(0, 0)
+
+#Ball speed can be changed by changing the numbers.
 ball.dx = 0.2
 ball.dy = -0.2
+
 
 pen = turtle.Turtle()
 pen.speed(0)

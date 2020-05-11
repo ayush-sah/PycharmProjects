@@ -1,3 +1,5 @@
+# code for Connect 4 game
+
 import numpy as np
 import pygame
 import sys
