@@ -1,0 +1,5 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Keymap" displayType="STICKY_BALLOON" playSound="true" />
+  </component>
+</application>
