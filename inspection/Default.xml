@@ -7,4 +7,12 @@
       </list>
     </option>
   </inspection_tool>
+  <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+    <option name="ignoredIdentifiers">
+      <list>
+        <option value="AdvancePharma.urls.views" />
+        <option value="AdvancePharma.views" />
+      </list>
+    </option>
+  </inspection_tool>
 </profile>
